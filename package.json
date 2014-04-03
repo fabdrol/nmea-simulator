@@ -1,0 +1,29 @@
+{
+  "name": "nmea-simulator",
+  "version": "0.1.0",
+  "description": "Simple utility that reads NMEA 0183 lines from a file, sets up a virtual serial port and emits the lines on this serial port at 1 Hz.",
+  "main": "./bin/nmea-simulator",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/fabdrol/nmea-simulator.git"
+  },
+  "keywords": [
+    "nmea",
+    "simulator",
+    "serial",
+    "serialport",
+    "virtual",
+    "virtual",
+    "serial",
+    "port"
+  ],
+  "author": "Fabian Tollenaar <fabian@starting-point.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fabdrol/nmea-simulator/issues"
+  },
+  "homepage": "https://github.com/fabdrol/nmea-simulator"
+}
