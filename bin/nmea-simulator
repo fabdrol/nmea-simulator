@@ -1,0 +1,30 @@
+#!/usr/bin/env node
+
+var opts =
+  require('nomnom')
+  .option('file', { 
+    abbr: 'f',
+    flag: false,
+    help: 'NMEA logfile to use'
+  })
+  .option('serialport', {
+    abbr: 's',
+    flag: false,
+    help: 'Serial Port to use'
+  })
+  .parse()
+;
+
+var fileName = null
+  , serialPort = null
+;
+
+if(typeof opts.file === 'string' && String(opts.file).length > 0) {
+  fileName = opts.file;
+} 
+
+if(typeof opts.serialport === 'string' && String(opts.serialport).length > 0) {
+  serialPort = opts.serialport; 
+}
+
+require('../lib')(fileName, serialPort);
